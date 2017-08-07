@@ -89,14 +89,13 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        else
-            if(id==R.id.action_users)
-            {
+        switch(id)
+        {
+            case R.id.action_settings:
+                break;
+
+            case R.id.action_users:
                 switch(drawerLayout.getDrawerLockMode(Gravity.RIGHT))
                 {
                     case DrawerLayout.LOCK_MODE_LOCKED_CLOSED:
@@ -107,15 +106,13 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
                         ((CardView)findViewById(R.id.user_login)).startAnimation(animGone);
                         ((CardView)findViewById(R.id.user_login)).getBackground().setAlpha(230);
                         ((ScrollView)findViewById(R.id.scroll)).getBackground().setAlpha(0);
-                    break;
+                        break;
                     case DrawerLayout.LOCK_MODE_UNLOCKED:
                         drawerLayout.openDrawer(Gravity.RIGHT);
-                    break;
+                        break;
                 }
-
-
-            }
-
+            break;
+        }
         return super.onOptionsItemSelected(item);
     }
     private void setupViewPager(ViewPager viewPager) {
