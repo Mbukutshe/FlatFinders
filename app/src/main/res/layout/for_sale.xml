@@ -39,103 +39,57 @@
             <FrameLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content">
-                <android.support.v7.widget.CardView
+                <android.support.v7.widget.AppCompatButton
                     android:id="@+id/all"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    card_view:cardBackgroundColor="@color/colorPrimary"
-                    android:layout_gravity="center"
-                    card_view:cardElevation="2dp"
-                    card_view:cardCornerRadius="15dp"
-                    card_view:contentPaddingLeft="30dp"
-                    card_view:contentPaddingRight="30dp"
-                    card_view:cardPreventCornerOverlap="false"
-                    android:layout_alignParentTop="true"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    card_view:theme="@style/AlertDialog.AppCompat">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#fff"
-                        android:layout_gravity="center"
-                        android:text="All" />
-                </android.support.v7.widget.CardView>
+                    android:layout_height="wrap_content"
+                    app:elevation="2dp"
+                    android:background="@drawable/button_category_background"
+                    app:pressedTranslationZ="2dp"
+                    android:text="All"
+                    android:textColor="@drawable/button_category_color"/>
             </FrameLayout>
             <FrameLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content">
-                <android.support.v7.widget.CardView
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
                     android:id="@+id/one_bed"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_gravity="center"
-                    card_view:cardElevation="2dp"
-                    card_view:cardCornerRadius="15dp"
-                    card_view:contentPaddingLeft="10dp"
-                    card_view:contentPaddingRight="10dp"
-                    card_view:cardPreventCornerOverlap="false"
-                    android:layout_alignParentTop="true"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    card_view:theme="@style/AlertDialog.AppCompat">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
-                        android:layout_gravity="center"
-                        android:text="1 Bedroom" />
-                </android.support.v7.widget.CardView>
+                    android:layout_height="wrap_content"
+                    app:elevation="2dp"
+                    android:background="@drawable/button_category_background"
+                    app:pressedTranslationZ="2dp"
+                    android:text="1 Bedroom"
+                    android:textColor="@drawable/button_category_color"/>
             </FrameLayout>
             <FrameLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content">
-                <android.support.v7.widget.CardView
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
                     android:id="@+id/two_bed"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_gravity="center"
-                    card_view:cardElevation="2dp"
-                    card_view:cardCornerRadius="15dp"
-                    card_view:contentPaddingLeft="10dp"
-                    card_view:contentPaddingRight="10dp"
-                    card_view:cardPreventCornerOverlap="false"
-                    android:layout_alignParentTop="true"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    card_view:theme="@style/AlertDialog.AppCompat">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
-                        android:layout_gravity="center"
-                        android:text="2 Bedroom" />
-                </android.support.v7.widget.CardView>
+                    android:layout_height="wrap_content"
+                    app:elevation="2dp"
+                    android:background="@drawable/button_category_background"
+                    app:pressedTranslationZ="2dp"
+                    android:text="2 Bedroom"
+                    android:textColor="@drawable/button_category_color"/>
             </FrameLayout>
             <FrameLayout
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content">
-                <android.support.v7.widget.CardView
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
                     android:id="@+id/bachelor"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:layout_gravity="right"
-                    card_view:cardElevation="2dp"
-                    card_view:cardCornerRadius="15dp"
-                    card_view:contentPaddingLeft="10dp"
-                    card_view:contentPaddingRight="10dp"
-                    card_view:cardPreventCornerOverlap="false"
-                    android:layout_alignParentTop="true"
-                    android:adjustViewBounds="true"
-                    card_view:theme="@style/AlertDialog.AppCompat">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorPrimary"
-                        android:text="Bachelor"
-                        android:layout_gravity="center"
-                        />
-                </android.support.v7.widget.CardView>
+                    android:layout_height="wrap_content"
+                    app:elevation="2dp"
+                    android:background="@drawable/button_category_background"
+                    app:pressedTranslationZ="2dp"
+                    android:text="Bachelor"
+                    android:textColor="@drawable/button_category_color"/>
             </FrameLayout>
         </LinearLayout>
         <LinearLayout
