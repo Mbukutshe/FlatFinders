@@ -34,6 +34,8 @@ public class FlatRecyclerviewAdapter extends RecyclerView.Adapter<FlatsRecyclerv
         mLayoutManager = new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
         holder.viewPager.setLayoutManager(mLayoutManager);
         adapter = new FlatsViewPager(context);
+        holder.card.getBackground().setAlpha(190);
+        holder.inside_card.getBackground().setAlpha(0);
         holder.viewPager.setAdapter(adapter);
         switch (position)
         {

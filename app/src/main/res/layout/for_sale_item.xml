@@ -7,7 +7,7 @@
     android:layout_width="wrap_content"
     card_view:cardElevation="2dp"
     android:layout_margin="50dp"
-    card_view:cardCornerRadius="2dp"
+    card_view:cardCornerRadius="4dp"
     card_view:contentPaddingLeft="16dp"
     card_view:contentPaddingTop="16dp"
     card_view:contentPaddingRight="16dp"
@@ -40,8 +40,8 @@
                     android:id="@+id/flat"
                     android:adjustViewBounds="true"
                     android:scaleType="fitXY"
-                    android:layout_width="400dp"
-                    android:layout_height="400dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
                     android:src="@drawable/forsale"/>
                 <TextView
                     android:id="@+id/price"
@@ -51,7 +51,7 @@
                     android:background="#000"
                     android:textColor="#FFF"
                     android:padding="10dp"
-                    android:textSize="10pt"
+                    android:textSize="6pt"
                     android:layout_alignParentBottom="true"
                     android:text="R230 000-R500 000"/>
 
