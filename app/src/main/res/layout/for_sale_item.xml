@@ -40,8 +40,8 @@
                     android:id="@+id/flat"
                     android:adjustViewBounds="true"
                     android:scaleType="fitXY"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
                     android:src="@drawable/forsale"/>
                 <TextView
                     android:id="@+id/price"
@@ -51,79 +51,11 @@
                     android:background="#000"
                     android:textColor="#FFF"
                     android:padding="10dp"
-                    android:textSize="6pt"
+                    android:textSize="8pt"
                     android:layout_alignParentBottom="true"
                     android:text="R230 000-R500 000"/>
 
             </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/layout_footer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentBottom="true">
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_gravity="right|end"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/gallery"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="left"
-                    android:src="@drawable/gallery"/>
-                <ImageView
-                    android:id="@+id/map"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="100dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/loc"/>
-                <ImageView
-                    android:id="@+id/email"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/email"/>
-                <ImageView
-                    android:id="@+id/call"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:layout_width="30dp"
-                    android:rotation="180"
-                    android:layout_height="30dp"
-                    android:layout_gravity="right|end"
-                    android:src="@drawable/call"/>
-            </FrameLayout>
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="10dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Description"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Description"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Description"/>
-            </LinearLayout>
-
         </LinearLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

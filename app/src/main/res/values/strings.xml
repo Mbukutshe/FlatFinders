@@ -5,4 +5,23 @@
     <string name="two_bedroom">2 Bedroom</string>
     <string name="bachelor">Bachelor</string>
     <string name="all">All</string>
+    <string name="first_question">Do you only find properties in Durban city?</string>
+    <string name="first_answer">No, if you have a specific location in mind please ask me about it.</string>
+    <string name="second_question">How many days of your time will I need to find a flat to rent in Durban?</string>
+    <string name="second_answer">On average it\'s five days</string>
+    <string name="third_question">Why should I use a property finder instead of estate agents?</string>
+    <string name="third_answer">The estate agents tend to act on behalf of the landlord, because in many
+                                cases the agent rents the same flat every time it\'s vacant. I act on your behalf and get you the
+                                best deal possible.</string>
+    <string name="fourth_question">Why should I pay you to search for properties for me when I can do it myself online?</string>
+    <string name="fourth_answer">It\'s true that there are many online property websites, and I\'m happy to make viewings that you\'ve
+                                  found yourself on the internet. However, I know a lot of the local estate agents very well and can often
+                                 find properties before they\'ve been advertised.</string>
+    <string name="fifth_question">How far in advance do I need to book you to start searching for properties to rent?</string>
+    <string name="fifth_answer">That depends a little on the budget: cheaper flats rent very quickly if they\'re in good condition.
+                                I advise to start the searching process 3-6 weeks before you plan to move in. However, I get booked
+                                up in advance, so it\'s best to give me as much notice as possible about your moving dates.</string>
+    <string name="sixth_question">After I\'ve reserved a property, how long does it take to move in?</string>
+    <string name="sixth_answer">From reservation to signing the contract and getting your keys can take anything from a couple of
+                                days to one week. It\'s not usually longer.</string>
 </resources>

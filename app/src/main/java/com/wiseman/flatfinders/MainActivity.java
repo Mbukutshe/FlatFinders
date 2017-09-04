@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         //tabLayout.setupWithViewPager(viewPager);
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.flat).setText("Flats"));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.house).setText("Houses"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.question).setText("Questions Asked"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.pricing).setText("Pricing"));
         tabLayout.setOnTabSelectedListener(this);
         fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_main,new Flats()).commit();
@@ -61,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
                 break;
             case 1:
                 fragmentManager.beginTransaction().replace(R.id.content_main,new Houses()).commit();
+                break;
+            case 2:
+                fragmentManager.beginTransaction().replace(R.id.content_main,new AskedQuestions()).commit();
                 break;
         }
 

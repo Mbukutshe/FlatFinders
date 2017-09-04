@@ -10,9 +10,23 @@
         <item name="colorControlActivated">#fff</item>
     </style>
 
+    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/TransparentActionBar</item>
+
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TransparentActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/room_actionbar_style</item>
+        <item name="background">@drawable/room_actionbar_style</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

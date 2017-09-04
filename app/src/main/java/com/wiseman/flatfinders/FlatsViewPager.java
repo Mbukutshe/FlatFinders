@@ -2,11 +2,9 @@ package com.wiseman.flatfinders;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -16,7 +14,7 @@ import android.widget.TextView;
  * Created by Wiseman on 2017-06-25.
  */
 
-public class FlatsViewPager  extends RecyclerView.Adapter<FlatsItemHolder> implements View.OnTouchListener{
+public class FlatsViewPager  extends RecyclerView.Adapter<FlatsItemHolder> implements View.OnClickListener{
     private Context context;
     LinearLayoutManager mLayoutManager;
     GalleryAdapter adapter;
@@ -49,10 +47,7 @@ public class FlatsViewPager  extends RecyclerView.Adapter<FlatsItemHolder> imple
         ImageView imageView = (ImageView)holder.itemView.findViewById(R.id.flat);
         imageView.setImageResource(mResources[position]);
         ((TextView)holder.itemView.findViewById(R.id.price)).setText(Prices[position]);
-        ((ImageView)holder.itemView.findViewById(R.id.gallery)).setOnTouchListener(this);
-        holder.call.setOnTouchListener(this);
-        holder.map.setOnTouchListener(this);
-        holder.email.setOnTouchListener(this);
+        ((ImageView)holder.itemView.findViewById(R.id.flat)).setOnClickListener(this);
     }
 
     @Override
@@ -60,42 +55,15 @@ public class FlatsViewPager  extends RecyclerView.Adapter<FlatsItemHolder> imple
         return 4;
     }
 
+
     @Override
-    public boolean onTouch(View view, MotionEvent motionEvent) {
+    public void onClick(View view) {
         int id = view.getId();
         switch(id)
         {
-            case R.id.gallery:
-                context.startActivity(new Intent(context,Gallery.class));
-                break;
-            case R.id.call:
-                Intent intent = new Intent(Intent.ACTION_CALL,Uri.fromParts("tel","+27785411943",null));
-                try
-                {
-                    context.startActivity(intent);
-                }
-                catch (Exception e)
-                {
-
-                }
-               break;
-            case R.id.map:
-                Uri gmmIntentUri = Uri.parse("geo:0,0?q=30 Blenford Crescent, Sunford,Phoenix");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                context.startActivity(mapIntent);
-                break;
-            case R.id.email:
-                Intent email = new Intent(Intent.ACTION_SEND);
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"wisemanmbukutshe@gmail.com"});
-                email.putExtra(Intent.EXTRA_SUBJECT, "Assistance for getting a flat");
-
-                //need this to prompts email client only
-                email.setType("message/rfc822");
-
-                context.startActivity(Intent.createChooser(email, "Choose an Email client :"));
+            case R.id.flat:
+                context.startActivity(new Intent(context,RoomDetails.class));
                 break;
         }
-        return false;
     }
 }
