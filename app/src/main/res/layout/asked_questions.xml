@@ -29,6 +29,80 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="9pt"
+                        android:text="@string/question_instruction"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <FrameLayout
+                            android:id="@+id/frame_map"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/questions_contact_textviews_corners"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/map"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:src="@drawable/loc"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frame_email"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/questions_contact_textviews_corners"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/email"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:src="@drawable/email"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frame_call"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/questions_contact_textviews_corners"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/call"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:layout_width="30dp"
+                                android:rotation="180"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right|end"
+                                android:src="@drawable/call"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/description_corners">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="9pt"
                         android:text="@string/first_question"/>
                 </FrameLayout>
                 <FrameLayout

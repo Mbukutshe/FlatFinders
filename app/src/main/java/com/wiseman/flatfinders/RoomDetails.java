@@ -8,6 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +24,7 @@ public class RoomDetails extends AppCompatActivity implements View.OnTouchListen
     TextView number;
     LinearLayoutManager mLayoutManager;
     GalleryAdapter adapter;
+    Animation anim;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +61,9 @@ public class RoomDetails extends AppCompatActivity implements View.OnTouchListen
         int id = view.getId();
         switch(id) {
             case R.id.call:
+                anim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha);
+                frame_call.startAnimation(anim);
+
                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.fromParts("tel","+27785411943",null));
                 try
                 {
@@ -69,12 +75,18 @@ public class RoomDetails extends AppCompatActivity implements View.OnTouchListen
                 }
                 break;
             case R.id.map:
+                anim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha);
+                frame_map.startAnimation(anim);
+
                 Uri gmmIntentUri = Uri.parse("geo:0,0?q=30 Blenford Crescent, Sunford,Phoenix");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
                 break;
             case R.id.email:
+                anim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha);
+                frame_email.startAnimation(anim);
+
                 Intent email = new Intent(Intent.ACTION_SEND);
                 email.putExtra(Intent.EXTRA_EMAIL, new String[]{"wisemanmbukutshe@gmail.com"});
                 email.putExtra(Intent.EXTRA_SUBJECT, "Assistance for getting a flat");

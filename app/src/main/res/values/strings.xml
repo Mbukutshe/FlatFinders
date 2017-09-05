@@ -5,6 +5,11 @@
     <string name="two_bedroom">2 Bedroom</string>
     <string name="bachelor">Bachelor</string>
     <string name="all">All</string>
+    <string name="first_number">031 301 0921</string>
+    <string name="second_number">073 039 4533</string>
+    <string name="third_number">078 729 5086</string>
+    <string name="fourth_number">078 489 7916</string>
+    <string name="question_instruction">Read through the following and if you still have questions please don\'t hesitate to contact me:</string>
     <string name="first_question">Do you only find properties in Durban city?</string>
     <string name="first_answer">No, if you have a specific location in mind please ask me about it.</string>
     <string name="second_question">How many days of your time will I need to find a flat to rent in Durban?</string>
